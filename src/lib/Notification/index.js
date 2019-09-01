@@ -9,4 +9,4 @@ const Notification = props => {
     );
 };
 
-export { Notification };
+export default Notification;
