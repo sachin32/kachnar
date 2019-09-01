@@ -1,7 +1,7 @@
 {
-  "name": "notification",
-  "version": "1.0.0",
-  "description": "",
+  "name": "kachnar",
+  "version": "0.0.1",
+  "description": "Library to use reusable components",
   "main": "./dist/lib/index.js",
   "scripts": {
     "start": "./node_modules/.bin/parcel src/docs/index.html",
@@ -10,6 +10,10 @@
   },
   "author": "Sachin Tiwari",
   "license": "ISC",
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/sachin32/kachnar.git"
+  },
   "dependencies": {
     "react": "^16.9.0",
     "react-dom": "^16.9.0"
