@@ -1,6 +1,6 @@
 import React from 'react';
-import ReactDOM from 'react';
-import Notification from '../lib/Notification';
+import ReactDOM from 'react-dom';
+import { Notification } from '../lib/Notification';
 
 const App = () => (
     <div>
