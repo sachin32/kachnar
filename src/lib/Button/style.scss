@@ -1,0 +1,28 @@
+.k_button {
+  background-color: #7CB7E8;
+  border: 1px solid #64A0D2;
+  border-radius: 3px;
+  font-size: 16px;
+  padding: 3px 12px;
+  color: #FFFFFF;
+
+  &--primary {
+    background-color: #7CB7E8;
+    border: 1px solid #64A0D2;
+  }
+
+  &--success {
+    background-color: #2FB948;
+    border-color: #43C66D;
+  }
+
+  &--error {
+    background-color: #EC5858;
+    border-color: #A25151;
+  }
+
+  &--warn {
+    background-color: #EEBC69;
+    border-color: #BFB15D;
+  }
+}

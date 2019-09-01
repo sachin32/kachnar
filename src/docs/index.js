@@ -1,11 +1,25 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Notification } from '../lib/Notification';
+import { Button } from '../lib';
+const styleObj = {
+    marginRight: '5px'
+};
 
 const App = () => (
     <div>
-        <h2>Notification</h2>
-        <Notification />
+        <h2>Button</h2>
+        <Button style={styleObj}>
+            Default
+        </Button>
+        <Button success style={styleObj}>
+            Success
+        </Button>
+        <Button error style={styleObj}>
+            Error
+        </Button>
+        <Button warn style={styleObj}>
+            Warn
+        </Button>
     </div>
 );
 
