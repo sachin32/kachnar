@@ -1,6 +1,6 @@
 {
   "name": "kachnar",
-  "version": "0.0.4",
+  "version": "0.0.5-0",
   "description": "Library to use reusable components",
   "main": "lib/index.js",
   "homepage": "https://sachin32.github.io/kachnar/",
