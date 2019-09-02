@@ -1,15 +1,28 @@
 const path = require('path');
 const nodeExternals = require('webpack-node-externals');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
     entry: path.resolve(__dirname, './src/lib/index.js'),
     output: {
-        path: path.resolve(__dirname, './dist'),
+        path: path.join(__dirname, './lib'),
         filename: 'index.js',
-        library: '',
-        libraryTarget: 'commonjs'
+        library: 'kachnar',
+        libraryTarget: 'commonjs2',
+        publicPath: '/lib/',
     },
     externals: [nodeExternals()],
+    plugins:[
+        new MiniCssExtractPlugin({
+            filename: 'style.css',
+        }),
+    ],
+    resolve: {
+        alias: {
+            'react': path.resolve(__dirname, './node_module/react'),
+            'react-dom': path.resolve(__dirname, './node_module/react-dom'),
+        }
+    },
     module: {
         rules: [
             {
@@ -23,18 +36,13 @@ module.exports = {
             {
                 test: /\.s[ac]ss$/i,
                 use: [
-                    // Creates `style` nodes from JS strings
-                    'style-loader',
-                    // Translates CSS into CommonJS
+                    {
+                        loader: MiniCssExtractPlugin.loader,
+                    },
                     'css-loader',
-                    // Compiles Sass to CSS
                     'sass-loader',
                 ],
             },
-            {
-                test: /\.css$/,
-                use: ['style-loader', 'css-loader']
-            }
         ]
     }
 };

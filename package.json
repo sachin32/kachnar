@@ -2,11 +2,12 @@
   "name": "kachnar",
   "version": "0.0.4",
   "description": "Library to use reusable components",
-  "main": "./dist/lib/index.js",
+  "main": "lib/index.js",
   "homepage": "https://sachin32.github.io/kachnar/",
   "scripts": {
     "start": "./node_modules/.bin/parcel src/docs/index.html",
     "build": "./node_modules/.bin/webpack --mode=production",
+    "prepublish": "rm -rf ./lib && npm run build",
     "build:docs": "./node_modules/.bin/parcel build src/docs/index.js -d docs/ && cp src/docs/index.html docs/index.html"
   },
   "author": "Sachin Tiwari",
@@ -21,12 +22,6 @@
     "library",
     "components"
   ],
-  "dependencies": {
-    "bem-cn": "^3.0.1",
-    "lodash": "^4.17.15",
-    "react": "^16.9.0",
-    "react-dom": "^16.9.0"
-  },
   "peerDependencies": {
     "react": "^16.9.0",
     "react-dom": "^16.9.0"
@@ -36,10 +31,16 @@
     "@babel/preset-env": "^7.5.5",
     "@babel/preset-react": "^7.0.0",
     "babel-loader": "^8.0.6",
+    "bem-cn": "^3.0.1",
     "css-loader": "^3.2.0",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "lodash": "^4.17.15",
+    "mini-css-extract-plugin": "^0.8.0",
     "node-sass": "^4.12.0",
     "parcel-bundler": "^1.12.3",
     "prop-types": "^15.7.2",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
     "sass": "^1.22.10",
     "sass-loader": "^8.0.0",
     "style-loader": "^1.0.0",
