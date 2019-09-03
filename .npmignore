@@ -3,4 +3,8 @@ docs
 .cache
 .gitignore
 
+dist
+
 webpack.config.js
+
+.idea

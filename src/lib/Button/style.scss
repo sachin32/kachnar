@@ -1,14 +1,14 @@
 .k_button {
-  background-color: #7CB7E8;
-  border: 1px solid #64A0D2;
+  background-color: #3C89E8;
+  border: 1px solid #7B9DF2;
   border-radius: 3px;
   font-size: 16px;
   padding: 3px 12px;
   color: #FFFFFF;
 
   &--primary {
-    background-color: #7CB7E8;
-    border: 1px solid #64A0D2;
+    background-color: #3C89E8;
+    border-color: #7B9DF2;
   }
 
   &--success {
@@ -24,5 +24,30 @@
   &--warn {
     background-color: #EEBC69;
     border-color: #BFB15D;
+  }
+
+  &--info {
+    background-color: #7CB7E8;
+    border: 1px solid #64A0D2;
+  }
+
+  &--micro {
+    font-size: 10px;
+  }
+
+  &--mini {
+    font-size: 12px;
+  }
+
+  &--small {
+    font-size: 14px;
+  }
+
+  &--big {
+    font-size: 16px;
+  }
+
+  &--xbig {
+    font-size: 18px;
   }
 }
