@@ -5,8 +5,7 @@ const Home = props => {
     return (
         <div>
             Coming Soon
-
-            <Link to="/button">See Button Example Here</Link>
+            <Link to="kachnar/button">See Button Example Here</Link>
         </div>
     );
 };

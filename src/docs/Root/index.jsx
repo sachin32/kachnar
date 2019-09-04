@@ -5,7 +5,7 @@ import ButtonExample from "../components/Button";
 
 const Root = props => {
     return (
-        <Router>
+        <Router basename="/kachnar">
             <Switch>
                 <Route exact path="/" component={Home} />
                 <Route path="/button" component={ButtonExample} />
