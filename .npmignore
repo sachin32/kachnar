@@ -3,15 +3,11 @@ docs
 .cache
 .gitignore
 .babelrc
-babel.config.js
 
 dist
 
 webpack.config.js
 
 .idea
-
-**/__tests__/**
-**/__tests__/**
 
 package-lock.json

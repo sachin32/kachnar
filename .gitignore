@@ -8,8 +8,4 @@ npm-debug.log
 
 .cache
 
-lib
-
-__snapshots__
-
-package-lock.json
+/lib
