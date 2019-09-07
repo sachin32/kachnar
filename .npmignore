@@ -2,9 +2,14 @@ src
 docs
 .cache
 .gitignore
+.babelrc
+babel.config.js
 
 dist
 
 webpack.config.js
 
 .idea
+
+**/__tests__/**
+**/__tests__/**

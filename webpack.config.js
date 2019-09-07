@@ -21,7 +21,8 @@ module.exports = {
         alias: {
             'react': path.resolve(__dirname, './node_module/react'),
             'react-dom': path.resolve(__dirname, './node_module/react-dom'),
-        }
+        },
+        extensions: ['*', '.js', '.jsx'],
     },
     module: {
         rules: [
@@ -29,9 +30,6 @@ module.exports = {
                 test: /\.(js|jsx)$/,
                 exclude: /(node_modules|bower_components)/,
                 loader: 'babel-loader',
-                options: {
-                    presets: ['@babel/preset-env', '@babel/react']
-                }
             },
             {
                 test: /\.s[ac]ss$/i,

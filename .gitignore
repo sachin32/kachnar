@@ -9,3 +9,5 @@ npm-debug.log
 .cache
 
 lib
+
+__snapshots__
