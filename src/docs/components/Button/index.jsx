@@ -1,5 +1,5 @@
 import React from 'react';
-import {Button} from "../../../lib";
+import { Button } from "../../../lib";
 
 const styleObj = {
     marginRight: '5px'
