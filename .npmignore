@@ -13,3 +13,5 @@ webpack.config.js
 
 **/__tests__/**
 **/__tests__/**
+
+package-lock.json

@@ -11,3 +11,5 @@ npm-debug.log
 lib
 
 __snapshots__
+
+package-lock.json
