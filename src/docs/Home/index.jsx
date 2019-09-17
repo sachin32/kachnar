@@ -1,11 +1,19 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import Sidebar from "./components/Sidebar";
+import sidebarData from './utils/data';
+import RouteSwitch from "../Root/component/RouteSwitch";
+import BEM from '../utils/bem';
+
+import './style.scss';
 
 const Home = props => {
+    const b = BEM('home');
     return (
-        <div>
-            Coming Soon
-            <Link to="button">See Button Example Here</Link>
+        <div className={b.toString()}>
+            <Sidebar items={sidebarData} />
+            <div className={b('container').toString()}>
+                <RouteSwitch />
+            </div>
         </div>
     );
 };

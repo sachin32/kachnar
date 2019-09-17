@@ -1,0 +1,14 @@
+body {
+    margin: 0;
+}
+
+.home {
+    width: 100vw;
+    height: 100vh;
+
+    &__container {
+        display: inline-block;
+        height: 100%;
+        width: calc(100% - 250px);
+    }
+}
