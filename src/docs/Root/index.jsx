@@ -1,15 +1,14 @@
 import React from 'react';
-import { Route, BrowserRouter as Router, Switch } from 'react-router-dom';
-import Home from '../Home';
-import ButtonExample from "../components/Button";
+import { Route, BrowserRouter as Router } from 'react-router-dom';
+import Home from "../Home";
+import ErrorBoundary from "../ErrorBoundary";
 
 const Root = props => {
     return (
         <Router basename="/kachnar">
-            <Switch>
-                <Route exact path="/" component={Home} />
-                <Route path="/button" component={ButtonExample} />
-            </Switch>
+            <ErrorBoundary>
+                <Route path="/" component={Home} />
+            </ErrorBoundary>
         </Router>
     );
 };

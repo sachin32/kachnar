@@ -7,7 +7,7 @@ const styleObj = {
 
 const ButtonExample = props => {
     return (
-        <div>
+        <div style={{ margin: '10px' }}>
             <h2>Button</h2>
             <Button style={styleObj}>
                 Default
